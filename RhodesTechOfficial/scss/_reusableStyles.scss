@@ -1,0 +1,88 @@
+.gradient {
+  background: var(--gradient);
+}
+
+.defaultMargin {
+  margin: 0 14rem;
+}
+
+button {
+  color: whitesmoke;
+  padding: 1rem 1.8rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(to right, #537895, #09203f);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #0b0b0b inset;
+  border: solid 4px transparent;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.spring {
+  display: flex;
+  align-items: center;
+  margin: 6rem 0;
+  .coil {
+    border-top: whitesmoke dashed 0.01rem;
+    width: 49.75%;
+  }
+  .bar {
+    width: 0.5%;
+    height: 7rem;
+  }
+}
+
+.spring.right {
+  flex-direction: row-reverse;
+}
+
+.title_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6rem;
+  text-align: center;
+  h2 {
+    color: whitesmoke;
+  }
+  p {
+    color: rgb(153, 153, 153);
+  }
+}
+
+h3 {
+  color: whitesmoke;
+}
+
+p {
+  color: rgb(129, 128, 128);
+}
+
+.design {
+  position: relative;
+  .background {
+    height: 10rem;
+    width: 12rem;
+    background: linear-gradient(to right, #537895, #09203f);
+    position: absolute;
+    z-index: -1;
+    left: -10px;
+    top: -8px;
+  }
+}
+
+.right {
+  .background {
+    top: auto;
+    left: auto;
+    right: -10px;
+    bottom: -8px;
+  }
+}

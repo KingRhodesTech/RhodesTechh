@@ -1,0 +1,46 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 2rem 0;
+  .brand_container {
+    display: flex;
+    .brand {
+      h2 {
+        span {
+          margin-left: 0.5rem;
+          font-size: 12px;
+          letter-spacing: 0.1rem;
+          color: #09203f;
+        }
+      }
+    }
+    .toggle {
+      display: none;
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    li {
+      a {
+        text-decoration: none;
+        color: inherit;
+        &:hover {
+          @include gradientText;
+        }
+      }
+      i {
+        &:hover {
+          @include gradientText;
+        }
+      }
+    }
+    button {
+      padding: 0.5rem;
+    }
+  }
+}
